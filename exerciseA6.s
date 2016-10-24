@@ -14,5 +14,9 @@ main:   li		$v0, 4		# System call code to print string   # $v0 = 4
         la		$a0, str1	# Print str1
         syscall
 
+        li		$v0, 5		# System call code to read integer  # $v0 = 5 
+        syscall
+        
+
         li		$v0, 10		# Exits the program  # $v0 = 10
         syscall
